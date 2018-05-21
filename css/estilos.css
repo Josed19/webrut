@@ -1,0 +1,231 @@
+/*
+
+
+    font-family: 'Roboto Condensed', sans-serif;
+
+    font-family: 'Comfortaa', cursive;
+
+    Nombre de fuentes importadas desde Google Fonts.
+
+*/
+*{
+    font-family: arial, sans-serif, monospace ;
+    box-sizing: border-box;
+}
+
+/* Estilos banner */
+.banner
+{
+    width:100%;
+}
+.banner img
+{
+    width:100%;
+}
+
+
+/* fondo color */
+.fondo
+{
+    background-color:#f2f2f2;
+}
+
+
+/* Estilos portada */
+.portada
+{
+    color:#3A3A3A;
+    font-size:15px;
+    padding:0.5em;
+    /* flex */
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.portada img
+{
+    width:30%;
+    border-radius:50%;
+    border:0.2em solid #fff;
+}
+.portada .portada-info
+{
+    text-align: center;
+}
+.portada p[title="frase"]
+{
+    display: none;
+    padding:0.3em 0;
+    font-style:italic;
+}
+.portada h1
+{
+    font-family: 'Comfortaa';
+    padding-top:0.5em;
+}
+.portada p
+{
+    font-family: 'Roboto Condensed';
+    padding:0.3em 0;
+}
+
+
+/* Estilos para red social */
+.red-social a[class^="icon"]
+{
+    text-decoration: none;
+    font-size: 2.2em;
+    color:#522a27;
+}
+.red-social a[class^="icon"]:hover
+{
+    color:#b0625b;
+}
+
+/* Principal */
+.principal
+{
+    padding:0.2em;
+}
+.elemento
+{
+    margin:2em 0;
+    color:#3A3A3A;
+    border-radius:0.5em;
+    padding:0.5em;
+    background-color:white;
+    box-shadow: -1px 1px  #e1e1e1, 1px -1px #e1e1e1;
+}
+.elemento h2
+{
+    color:#DF8D35;
+    font-family:'Roboto Condensed';
+    font-size:1.5em;
+    text-align: center;
+    padding:0.5em 0;
+}
+.elemento img
+{
+    width:100%;
+}
+.elemento p
+{
+    padding:0.5em 0;
+    font-size: 0.9em;
+    font-style: italic;
+}
+.info-uno
+{
+    padding:1em 0;
+    /* flex */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.info-uno img{
+    width:70px;
+    border-radius:50%;
+}
+.info-uno p{
+    width:60%;
+}
+/*  Mdiaqueris de P R U E B A*/
+@media  (min-width:320px)
+{
+    .principal{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .elemento{
+        width: 90%;
+    }
+    
+}
+@media  (min-width:380px)
+{
+    .portada .red-social{
+        padding:1em;
+    } 
+    .principal{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .elemento{
+        width: 70%;
+        margin:1%;
+    }
+} 
+@media  (min-width:480px)
+{
+    .portada{
+        margin-top: -13%;
+        display:flex;
+        flex-direction: column;
+    }
+    .portada p[title="frase"]
+    {
+        display: block;
+    }
+    .elemento{
+        width: 48%;
+        margin:1%;
+    }
+    .tres{
+        width:60%;
+    }.portada img{
+        width:150px;
+    }
+}
+@media  (min-width:768px)
+{
+    .portada{
+        margin-top: -10%;
+        display:flex;
+        flex-direction: column;
+    }
+    .portada p[title="frase"]
+    {
+        display: block;
+    }
+    .elemento{
+        width: 31.33%;
+        margin:1%;
+    }
+    .tres{
+        width:31.33%;
+    }
+    .portada h1{
+        font-size:1.2em;;
+    }
+    .portada p{
+        font-size:1.1em;
+    }
+}
+@media (min-width:800px){
+    .portada img{
+        width:200px;
+    }
+    .banner{
+        max-width:1300px;
+        margin:0 auto;
+    }
+    .principal{
+        margin:0 auto;
+        margin-top:3em;
+        max-width: 1300px;
+        padding:5em 0;
+        background: linear-gradient(181deg, transparent 5%, #DF8D35 5%);
+    }
+    .elemento{
+        border-radius:0px;
+        max-width:320px;
+        background-color:rgba(255,255,255,0.8);
+    }
+}
+@media (min-width:1024px){
+    .portada{
+        margin-top:-9%;
+    }
+}
