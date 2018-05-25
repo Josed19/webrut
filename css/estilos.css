@@ -128,6 +128,11 @@
 }
 .info-uno p{
     width:60%;
+    
+}
+.contacto{
+    font-style: italic;
+    font-weight: bold;
 }
 /*  Mdiaqueris de P R U E B A*/
 @media  (min-width:320px)
